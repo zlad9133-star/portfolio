@@ -1,53 +1,191 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>موقع شخصي بسيط
-
-    </title>
-   <style>
-      body{ 
-        font-family: Arial, Helvetica, sans-serif;
-        text-align: center;
-        padding: 50px;
-        background-color: aquamarine;
-        
-      }
-       button{  
-        background: rgb(50, 9, 235);
-        color: #f5fdfd;
-        border: none;
-        border-radius: 5px;
-         padding: 10px;
-         
-       }
-      .header{
-          justify-content: center;
-           background-color: antiquewhite;
-           margin-top: 100px;
-           border-radius: 30px;
-           width: 40%;
-           height: 30%;
-           margin-left: auto;
-           margin-right: auto;
-      }
-
-   </style>
-
-
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ذياد — مطور واجهات أمامية</title>
+  <meta name="description" content="بورتفوليو ذياد، مطور واجهات أمامية من سوهاج، مصر. مشاريع بـ HTML و CSS و JavaScript و React و Node.js." />
+  <meta property="og:title" content="ذياد — مطور واجهات أمامية" />
+  <meta property="og:description" content="مشاريع ويب متجاوبة بـ HTML و CSS و JavaScript و React." />
+  <meta property="og:image" content="https://zlad9133-star.github.io/portfolio/assets/image-gallery.webp" />
+  <meta name="theme-color" content="#14110f" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%2314110f'/><text x='32' y='44' font-size='34' text-anchor='middle' fill='%23e8643c' font-family='monospace'>&lt;/&gt;</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    
-    <div class="header">
-    
-    <h1> 
-        مرحبا , أنا ذياد
+  <a class="skip" href="#projects">تخطَّ إلى المشاريع</a>
 
-    </h1>
-    <p>مطور واجهات أمامية</p>
-    <button  onclick="alert('رقم التلفون :01022267853')"  > لتواصل معي</button>
-</div>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a href="#top" class="mark" aria-label="الرئيسية"><span class="mono accent">&lt;/&gt;</span> ذياد</a>
+      <nav aria-label="القائمة الرئيسية">
+        <a href="#projects">المشاريع</a>
+        <a href="#skills">المهارات</a>
+        <a href="#contact">تواصل</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap">
+      <p class="eyebrow"><span class="dot" aria-hidden="true"></span> متاح لمشاريع جديدة · سوهاج، مصر</p>
+      <h1>مرحباً، أنا <span class="accent">ذياد</span><br />مطور واجهات أمامية</h1>
+      <p class="lead">أبني مواقع وصفحات هبوط متجاوبة وسريعة باستخدام HTML و CSS و JavaScript و React، وأربطها بواجهات خلفية بـ Node.js عند الحاجة.</p>
+      <div class="cta">
+        <a class="btn primary" href="https://wa.me/201515025256" target="_blank" rel="noopener">تواصل عبر واتساب</a>
+        <a class="btn ghost" href="#projects">شاهد أعمالي</a>
+      </div>
+      <dl class="stats">
+        <div><dt>6</dt><dd>مشاريع منشورة</dd></div>
+        <div><dt>React</dt><dd>مع Vite</dd></div>
+        <div><dt>Node</dt><dd>مع Express</dd></div>
+      </dl>
+    </section>
+
+    <section id="projects" class="section wrap" aria-labelledby="projects-title">
+      <div class="section-head">
+        <p class="kicker">01 — الأعمال</p>
+        <h2 id="projects-title">مشاريع مختارة</h2>
+      </div>
+
+      <div class="grid">
+        <article class="card feature">
+          <a class="shot" href="https://zlad9133-star.github.io/image-gallery/" target="_blank" rel="noopener">
+            <img src="assets/image-gallery.webp" alt="لقطة من تطبيق Lenscape لمعرض الصور" width="960" height="600" loading="lazy" />
+          </a>
+          <div class="body">
+            <h3>Lenscape — معرض صور</h3>
+            <p>تطبيق React لعرض الصور مع البحث، والعرض بالحجم الكامل، وحفظ المفضلة في المتصفح.</p>
+            <ul class="tags mono"><li>React</li><li>Vite</li><li>Axios</li><li>API</li></ul>
+            <div class="links">
+              <a href="https://zlad9133-star.github.io/image-gallery/" target="_blank" rel="noopener">المعاينة ↗</a>
+              <a href="https://github.com/zlad9133-star/image-gallery" target="_blank" rel="noopener">الكود ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <a class="shot" href="https://zlad9133-star.github.io/Club-reservation-project/" target="_blank" rel="noopener">
+            <img src="assets/Club-reservation-project.webp" alt="لقطة من صفحة هبوط NovaFit للنادي الرياضي" width="960" height="600" loading="lazy" />
+          </a>
+          <div class="body">
+            <h3>NovaFit — نادي رياضي</h3>
+            <p>صفحة هبوط بنموذج اشتراك وزر واتساب وتحسين SEO.</p>
+            <ul class="tags mono"><li>HTML</li><li>CSS</li><li>JS</li></ul>
+            <div class="links">
+              <a href="https://zlad9133-star.github.io/Club-reservation-project/" target="_blank" rel="noopener">المعاينة ↗</a>
+              <a href="https://github.com/zlad9133-star/Club-reservation-project" target="_blank" rel="noopener">الكود ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <a class="shot" href="https://zlad9133-star.github.io/royal-motors-/" target="_blank" rel="noopener">
+            <img src="assets/royal-motors.webp" alt="لقطة من صفحة هبوط رويال موتورز" width="960" height="600" loading="lazy" />
+          </a>
+          <div class="body">
+            <h3>رويال موتورز — معرض سيارات</h3>
+            <p>صفحة هبوط فاخرة لمعرض سيارات رياضية وفارهة.</p>
+            <ul class="tags mono"><li>HTML</li><li>CSS</li></ul>
+            <div class="links">
+              <a href="https://zlad9133-star.github.io/royal-motors-/" target="_blank" rel="noopener">المعاينة ↗</a>
+              <a href="https://github.com/zlad9133-star/royal-motors-" target="_blank" rel="noopener">الكود ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <a class="shot" href="https://zlad9133-star.github.io/fruit-shop/" target="_blank" rel="noopener">
+            <img src="assets/fruit-shop.webp" alt="لقطة من موقع محل فواكه الطازة" width="960" height="600" loading="lazy" />
+          </a>
+          <div class="body">
+            <h3>فواكه الطازة — محل فواكه</h3>
+            <p>موقع تعريفي يعرض المنتجات والأسعار وطرق التواصل.</p>
+            <ul class="tags mono"><li>HTML</li><li>CSS</li></ul>
+            <div class="links">
+              <a href="https://zlad9133-star.github.io/fruit-shop/" target="_blank" rel="noopener">المعاينة ↗</a>
+              <a href="https://github.com/zlad9133-star/fruit-shop" target="_blank" rel="noopener">الكود ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <a class="shot" href="https://zlad9133-star.github.io/age-calculator/" target="_blank" rel="noopener">
+            <img src="assets/age-calculator.webp" alt="لقطة من تطبيق حاسبة العمر" width="960" height="600" loading="lazy" />
+          </a>
+          <div class="body">
+            <h3>حاسبة العمر</h3>
+            <p>تطبيق يحسب العمر بدقة من تاريخ الميلاد.</p>
+            <ul class="tags mono"><li>HTML</li><li>CSS</li><li>JS</li></ul>
+            <div class="links">
+              <a href="https://zlad9133-star.github.io/age-calculator/" target="_blank" rel="noopener">المعاينة ↗</a>
+              <a href="https://github.com/zlad9133-star/age-calculator" target="_blank" rel="noopener">الكود ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card code-card">
+          <div class="shot terminal" aria-hidden="true">
+            <pre class="mono"><span class="c">// booking-system-api</span>
+<span class="k">POST</span> /api/book
+{ <span class="s">"name"</span>, <span class="s">"phone"</span>,
+  <span class="s">"date"</span>, <span class="s">"time"</span> }
+
+<span class="k">GET</span>  /api/bookings
+<span class="ok">✓ 200 OK</span></pre>
+          </div>
+          <div class="body">
+            <h3>Booking System API</h3>
+            <p>واجهة برمجية لنظام حجز مواعيد مع قاعدة بيانات MongoDB.</p>
+            <ul class="tags mono"><li>Node.js</li><li>Express</li><li>MongoDB</li></ul>
+            <div class="links">
+              <a href="https://github.com/zlad9133-star/booking-system-api" target="_blank" rel="noopener">الكود ↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section wrap" aria-labelledby="skills-title">
+      <div class="section-head">
+        <p class="kicker">02 — الأدوات</p>
+        <h2 id="skills-title">المهارات</h2>
+      </div>
+      <div class="skills">
+        <div>
+          <h3>الواجهات الأمامية</h3>
+          <ul class="tags mono"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>React</li><li>Vite</li><li>Responsive Design</li></ul>
+        </div>
+        <div>
+          <h3>الواجهات الخلفية</h3>
+          <ul class="tags mono"><li>Node.js</li><li>Express</li><li>MongoDB</li><li>REST API</li></ul>
+        </div>
+        <div>
+          <h3>أدوات</h3>
+          <ul class="tags mono"><li>Git</li><li>GitHub</li><li>GitHub Pages</li><li>GitHub Actions</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section wrap contact" aria-labelledby="contact-title">
+      <p class="kicker">03 — تواصل</p>
+      <h2 id="contact-title">عندك مشروع؟ خلّينا نتكلم.</h2>
+      <a class="phone mono" href="tel:+201515025256" dir="ltr">01515025256</a>
+      <div class="cta">
+        <a class="btn primary" href="https://wa.me/201515025256" target="_blank" rel="noopener">واتساب</a>
+        <a class="btn ghost" href="tel:+201515025256">اتصال</a>
+        <a class="btn ghost" href="https://github.com/zlad9133-star" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    <p>© <span id="y">2026</span> ذياد</p>
+    <p class="mono">Built with HTML · CSS</p>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
