@@ -127,3 +127,6 @@ h2 { font-size: clamp(1.6rem, 3.5vw, 2.3rem); font-weight: 700; }
 }
 
 .project-preview{height:100%;min-height:180px;display:flex;flex-direction:column;justify-content:center;gap:12px;padding:28px;direction:ltr;text-align:left;color:#f8f5ee;background:#26342d}.project-preview span,.project-preview small{font:10px monospace;letter-spacing:2px;opacity:.75}.project-preview strong{font-family:system-ui,sans-serif;font-size:clamp(20px,3vw,32px);direction:rtl;text-align:left}.store-preview{background:linear-gradient(135deg,#e7ded1,#c46a48);color:#1f2924}.dashboard-preview{background:linear-gradient(135deg,#182b27,#527a67)}
+
+.nexa-preview{background:linear-gradient(135deg,#111b2b,#5b50b7);color:#fff}
+.estate-preview{background:linear-gradient(135deg,#e4e0d2,#567263);color:#17352d}
